@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Welcome</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h3>Insert data:</h3>
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td><p:inputText value="#{petition.name}"/></td>
+				<td>Telephone:</td>
+				<td><p:inputText value="#{petition.telephone}"/></td>
+			</tr>
+			<tr>
+				<td>email 1:</td>
+				<td><p:inputText value="#{petition.email1}"/></td>
+				<td>email 2:</td>
+				<td><p:inputText value="#{petition.email2}">
+					<f:attribute name="othermail" value="#{petition.email1}" />
+				</p:inputText>
+				</td>
+			</tr>
+		</table>
+		<p:commandButton action="#{petitionAction.submitPetition}"></p:commandButton>
+	</h:form>
+</h:body>
+</html>
