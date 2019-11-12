@@ -1,10 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>Lisboa01</groupId>
-  <artifactId>Lisboa01</artifactId>
+
+  <groupId>com.everis.training</groupId>
+  <artifactId>JSF_EE7</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  
+  <packaging>jar</packaging>
+
+  <name>JSF_EE7</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <dependencies>
 
 
@@ -31,7 +40,7 @@
   </dependencies>
   
   <build>
-  	<finalName>Lisboa01</finalName>
+  	<finalName>jsfEE7</finalName>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>

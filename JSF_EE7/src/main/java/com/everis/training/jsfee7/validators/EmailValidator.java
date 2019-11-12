@@ -1,4 +1,4 @@
-package main.java.org.lisboa.validators;
+package com.everis.training.jsfee7.validators;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;

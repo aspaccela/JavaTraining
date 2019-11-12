@@ -1,11 +1,16 @@
-package main.java.org.lisboa.beans;
+package com.everis.training.jsfee8.beans;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
+import java.io.Serializable;
 
-@ManagedBean(name = "user")
-@RequestScoped
-public class User {
+import javax.faces.view.ViewScoped;
+import javax.inject.Named;
+
+@Named(value="user")
+@ViewScoped
+public class User implements Serializable{
+
+	private static final long serialVersionUID = 4461609917324950487L;
+
 	private String name;
 	private String password;
 	

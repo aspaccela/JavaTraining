@@ -1,14 +1,27 @@
-package main.java.org.lisboa.beans;
+package com.everis.training.jsfee7.beans;
 
-import javax.faces.bean.ManagedBean;
+import java.io.Serializable;
 
-@ManagedBean(name="petition")
-public class Petition {
+import javax.enterprise.context.RequestScoped;
+import javax.enterprise.inject.Model;
+import javax.inject.Named;
+
+@RequestScoped
+@Model
+@Named(value="petition")
+public class Petition implements Serializable {
+
+	private static final long serialVersionUID = -7427060704793762087L;
+
 	private String name;
 	private String telephone;
 	
 	private String email1;
 	private String email2;
+	
+	public Petition() {
+		
+	}
 	
 	public String getName() {
 		return name;
